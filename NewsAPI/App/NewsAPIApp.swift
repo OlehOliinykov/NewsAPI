@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct NewsAPIApp: App {
+    @StateObject var news: NewsViewModel = NewsViewModel()
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsView(viewModel: news)
         }
     }
 }

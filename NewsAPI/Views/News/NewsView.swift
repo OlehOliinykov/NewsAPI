@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct NewsView: View {
+    @ObservedObject var viewModel: NewsViewModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +22,5 @@ struct NewsView: View {
 }
 
 #Preview {
-    NewsView()
+    NewsView(viewModel: NewsViewModel())
 }

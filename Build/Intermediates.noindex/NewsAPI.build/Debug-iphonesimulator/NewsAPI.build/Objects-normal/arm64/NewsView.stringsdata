@@ -1,0 +1,12 @@
+{
+  "source": "/Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/News/NewsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hello, world!"
+      }
+    ]
+  },
+  "version": 1
+}
