@@ -14,6 +14,7 @@ struct NewsAPIApp: App {
     
     init() {
         FirebaseApp.configure()
+        APIKeyFetchService.getAPIKeyFromBackend()
     }
     
     var body: some Scene {
