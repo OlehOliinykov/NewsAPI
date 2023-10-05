@@ -1,0 +1,18 @@
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/FirebaseSessions/Sources/Settings/SettingsProtocol.swift":
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProtocol.o"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProtocol.d"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProtocol.swiftdeps"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProtocol.swiftconstvalues"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProtocol.dia"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/FirebaseSessions/Sources/Settings/SettingsProvider.swift":
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProvider.o"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProvider.swiftdeps"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProvider.d"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProvider.dia"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/SettingsProvider.swiftconstvalues"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/FirebaseSessions/Sources/Time.swift":
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/Time.swiftdeps"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/Time.swiftconstvalues"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/Time.dia"
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/Time.o"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseSessions.build/Objects-normal/arm64/Time.d"

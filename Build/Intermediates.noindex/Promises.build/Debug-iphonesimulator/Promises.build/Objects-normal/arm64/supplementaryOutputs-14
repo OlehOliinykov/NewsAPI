@@ -1,0 +1,18 @@
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/promises/Sources/Promises/Promise+Catch.swift":
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Catch.o"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Catch.swiftdeps"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Catch.dia"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Catch.d"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Catch.swiftconstvalues"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/promises/Sources/Promises/Promise+Await.swift":
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Await.swiftconstvalues"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Await.swiftdeps"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Await.d"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Await.dia"
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Await.o"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/promises/Sources/Promises/Promise+Async.swift":
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Async.dia"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Async.swiftconstvalues"
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Async.o"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Async.swiftdeps"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Promises.build/Debug-iphonesimulator/Promises.build/Objects-normal/arm64/Promise+Async.d"

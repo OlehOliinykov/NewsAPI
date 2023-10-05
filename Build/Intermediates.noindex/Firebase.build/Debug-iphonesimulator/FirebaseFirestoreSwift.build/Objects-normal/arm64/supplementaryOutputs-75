@@ -1,0 +1,18 @@
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/ExplicitNull.swift":
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/ExplicitNull.dia"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/ExplicitNull.swiftconstvalues"
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/ExplicitNull.o"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/ExplicitNull.d"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/ExplicitNull.swiftdeps"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/DocumentSnapshot+ReadDecodable.swift":
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.swiftdeps"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.dia"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.d"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.swiftconstvalues"
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.o"
+"/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/Firestore/Swift/Source/Codable/EncoderDecoder.swift":
+  object: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/EncoderDecoder.o"
+  diagnostics: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/EncoderDecoder.dia"
+  dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/EncoderDecoder.d"
+  const-values: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/EncoderDecoder.swiftconstvalues"
+  swift-dependencies: "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Firebase.build/Debug-iphonesimulator/FirebaseFirestoreSwift.build/Objects-normal/arm64/EncoderDecoder.swiftdeps"

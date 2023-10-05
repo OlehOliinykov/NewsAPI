@@ -1,0 +1,32 @@
+{
+  "source": "/Users/olehcartelll/Documents/petProjects/NewsAPI/Build/Intermediates.noindex/Previews/NewsAPI/Intermediates.noindex/NewsAPI.build/Debug-iphonesimulator/NewsAPI.build/Objects-normal/arm64/NewsView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Trying find something for you..."
+      },
+      {
+        "comment": "",
+        "key": "Oops...\nlooks like we couldn't find anything"
+      },
+      {
+        "comment": "",
+        "key": "Let`s find some news"
+      },
+      {
+        "comment": "",
+        "key": "Search"
+      },
+      {
+        "comment": "",
+        "key": "News"
+      },
+      {
+        "comment": "",
+        "key": "OK"
+      }
+    ]
+  },
+  "version": 1
+}
