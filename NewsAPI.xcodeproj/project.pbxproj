@@ -12,6 +12,7 @@
 		CC80788B2ACC6FDA007A3199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC80788A2ACC6FDA007A3199 /* Assets.xcassets */; };
 		CC94A1F42ACDBE420067C40D /* CountryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94A1F32ACDBE420067C40D /* CountryFormatter.swift */; };
 		CC94A1F72ACDD73D0067C40D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC94A1F62ACDD73D0067C40D /* KeychainSwift */; };
+		CCB198002ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB197FF2ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift */; };
 		CCCD925E2ACC71BC00E5D042 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = CCCD925D2ACC71BC00E5D042 /* Preview Content */; };
 		CCCD92602ACC721400E5D042 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCCD925F2ACC721300E5D042 /* GoogleService-Info.plist */; };
 		CCCD926E2ACC72F300E5D042 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD926D2ACC72F300E5D042 /* NewsViewModel.swift */; };
@@ -58,6 +59,7 @@
 		CC80788A2ACC6FDA007A3199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC80788C2ACC6FDA007A3199 /* NewsAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewsAPI.entitlements; sourceTree = "<group>"; };
 		CC94A1F32ACDBE420067C40D /* CountryFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFormatter.swift; sourceTree = "<group>"; };
+		CCB197FF2ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreDataIfNeeded.swift; sourceTree = "<group>"; };
 		CCCD925D2ACC71BC00E5D042 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		CCCD925F2ACC721300E5D042 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCCD926D2ACC72F300E5D042 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				CC8078882ACC6FD9007A3199 /* NewsView.swift */,
 				CCCD926D2ACC72F300E5D042 /* NewsViewModel.swift */,
+				CCB197FF2ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			files = (
 				CCCD92C62ACC7EC000E5D042 /* NewsModel.swift in Sources */,
 				CCCD92CC2ACCB0E000E5D042 /* NewsDetailView.swift in Sources */,
+				CCB198002ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift in Sources */,
 				CCCD92C32ACC7CB400E5D042 /* NewsService.swift in Sources */,
 				CC94A1F42ACDBE420067C40D /* CountryFormatter.swift in Sources */,
 				CC8078892ACC6FD9007A3199 /* NewsView.swift in Sources */,

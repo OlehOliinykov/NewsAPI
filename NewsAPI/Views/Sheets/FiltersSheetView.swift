@@ -28,10 +28,10 @@ enum SortingParameters: String, CaseIterable {
     }
 }
 
-enum PageSize: String, CaseIterable {
-    case small = "25"
-    case medium = "50"
-    case large = "100"
+enum PageSize: Int, CaseIterable {
+    case small = 25
+    case medium = 50
+    case large = 100
 }
 
 enum SearchWordIn: String, CaseIterable {
@@ -142,17 +142,19 @@ struct FiltersSheetView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(Languages.allCases, id: \.self) { language in
-                        Text(CountryFormatter.getCountryName(for: language.rawValue) ?? "www")
-                            .foregroundColor(.black)
-                            .padding(Constants.Paddings.defaultButtonPadding)
-                            .background(languages == language ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
-                            .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
-                            .onTapGesture {
-                                withAnimation {
-                                    languages = language
+                    ForEach(Languages.allCases, id: \.self) { countryCode in
+                        if let formattedLanguage = CountryFormatter.getCountryName(for: countryCode.rawValue) {
+                            Text(formattedLanguage)
+                                .foregroundColor(.black)
+                                .padding(Constants.Paddings.defaultButtonPadding)
+                                .background(languages == countryCode ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
+                                .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
+                                .onTapGesture {
+                                    withAnimation {
+                                        languages = countryCode
+                                    }
                                 }
-                            }
+                        }
                     }
                 }
             }
@@ -200,7 +202,7 @@ struct FiltersSheetView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(PageSize.allCases, id: \.self) { size in
-                        Text(size.rawValue)
+                        Text("\(size.rawValue)")
                             .padding(Constants.Paddings.defaultButtonPadding)
                             .background(pageSize == size ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
                             .cornerRadius(Constants.CornerRadius.defaultCornerRadius)

@@ -1,5 +1,12 @@
 {
   "source": "/Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/Sheets/FiltersSheetView.swift",
-  "tables": {},
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld"
+      }
+    ]
+  },
   "version": 1
 }

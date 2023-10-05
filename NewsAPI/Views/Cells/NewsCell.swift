@@ -16,6 +16,10 @@ struct NewsCell: View {
         enum LineLimits {
             static let defaultLineLimit: Int = 3
         }
+        
+        enum Opacities {
+            static let defaultOpacity: Double = 0.05
+        }
     }
     
     let article: Articles
@@ -24,7 +28,7 @@ struct NewsCell: View {
             title
             description
         }
-        .background(.gray.opacity(0.05))
+        .background(.gray.opacity(Constants.Opacities.defaultOpacity))
         .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
         .padding()
     }
@@ -48,7 +52,7 @@ struct NewsCell: View {
                 Text(description)
                     .font(.body)
                     .foregroundColor(.gray)
-                    .lineLimit(3)
+                    .lineLimit(Constants.LineLimits.defaultLineLimit)
                     .padding()
                     .multilineTextAlignment(.leading)
             }

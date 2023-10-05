@@ -1,32 +1,5 @@
 {
   "source": "/Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/News/NewsView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "News"
-      },
-      {
-        "comment": "",
-        "key": "Search"
-      },
-      {
-        "comment": "",
-        "key": "OK"
-      },
-      {
-        "comment": "",
-        "key": "Let`s find some news"
-      },
-      {
-        "comment": "",
-        "key": "Oops...\nlooks like we couldn't find anything"
-      },
-      {
-        "comment": "",
-        "key": "Trying find something for you..."
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }

@@ -45,7 +45,7 @@ final class NewsService {
         component.path = "/v2/everything"
         component.queryItems = [
             URLQueryItem(name: "q", value: q),
-            URLQueryItem(name: "pageSize", value: pageSize.rawValue),
+            URLQueryItem(name: "pageSize", value: "\(pageSize.rawValue)"),
             URLQueryItem(name: "language", value: language.rawValue),
             URLQueryItem(name: "searchIn", value: searchIn.getParameter()),
             URLQueryItem(name: "sortBy", value: sortParam.getParameter()),

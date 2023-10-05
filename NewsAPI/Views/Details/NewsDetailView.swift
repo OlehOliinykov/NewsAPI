@@ -18,13 +18,17 @@ struct NewsDetailView: View {
         enum CornerRadius {
             static let defaultCornerRadius: CGFloat = 8
         }
+        
+        enum Spacings {
+            static let defaultSpacing: CGFloat = 16
+        }
     }
     
     var articles: Articles
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
+            VStack(spacing: Constants.Spacings.defaultSpacing) {
                 NewsImage
                 NewsDate
                 NewsSourceName

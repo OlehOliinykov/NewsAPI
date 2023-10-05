@@ -42,8 +42,26 @@ final class NewsViewModel: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
-    func findNews() {
+    func loadMoreNews() {
+        if !isLoadedAll {
+            findNews(for: searchText)
+        }
+    }
+    
+    func startSearch() {
+        news.removeAll()
+        currentPage = 1
+        isLoadedAll = false
+        findNews(for: searchText)
+    }
+    
+    private func findNews(for searchText: String) {
+        guard !searchText.isEmpty else { return }
+                
+        offset = currentPage * pageSize.rawValue
+        
         newsState = .loading
+        
         NewsService.findNewsPublisher(searchText,
                                       languages: language,
                                       searchIn: searchIn,
@@ -54,23 +72,36 @@ final class NewsViewModel: ObservableObject {
                                       pageSize: pageSize)
         .receive(on: DispatchQueue.global(qos: .background))
         .sink { [weak self] result in
-            switch result {
-            case .finished:
-                break
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    self?.showAlert = true
-                    self?.alertMessage = error.localizedDescription
-                }
-            }
+            guard let self else { return }
+            self.handleResult(result)
+            
         } receiveValue: { [weak self] response in
             guard let self else { return }
-            DispatchQueue.main.async {
-                self.news = response.articles
-                print("djsdfjsdj: \(self.news.count)")
-                self.newsState = self.news.isEmpty ? .emptyList : .loaded
-            }
+            self.handleResponse(response)
         }
         .store(in: &cancellables)
+    }
+    
+    private func handleResponse(_ response: NewsModel) {
+        DispatchQueue.main.async {
+            if response.articles.count < self.pageSize.rawValue {
+                self.isLoadedAll = true
+            }
+            self.news.append(contentsOf: response.articles)
+            self.currentPage += 1
+            self.newsState = self.news.isEmpty ? .emptyList : .loaded
+        }
+    }
+    
+    private func handleResult(_ result: Subscribers.Completion<Error>) {
+        switch result {
+        case .finished:
+            break
+        case .failure(_):
+            DispatchQueue.main.async {
+                self.showAlert = true
+                self.alertMessage = "Something went wrong"
+            }
+        }
     }
 }
