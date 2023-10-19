@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewsView: View {
+    //TODO: create global Constants file and use fileprivate extension when you need 
     private enum Constants {
         enum NavigationTitle {
             static let navigationNewsTitle = "News"

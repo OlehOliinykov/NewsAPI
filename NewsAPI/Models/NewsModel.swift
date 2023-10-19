@@ -14,6 +14,7 @@ struct NewsModel: Decodable {
 }
 
 struct Articles: Codable, Hashable, Identifiable {
+    //TODO: - In this case you don`t need optional string
     var id: String? = UUID().uuidString
     
     let source: Source

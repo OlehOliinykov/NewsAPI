@@ -27,6 +27,8 @@ final class NewsViewModel: ObservableObject {
     @Published var pageSize: PageSize = .small
     @Published var searchIn: SearchWordIn = .title
     @Published var sortingParameter: SortingParameters = .publishedAt
+    
+    //TODO: move to private method
     @Published var startDate: Date = (Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date())
     @Published var endDate: Date = .now
     
@@ -62,14 +64,7 @@ final class NewsViewModel: ObservableObject {
         
         newsState = .loading
         
-        NewsService.findNewsPublisher(searchText,
-                                      languages: language,
-                                      searchIn: searchIn,
-                                      sortParam: sortingParameter,
-                                      from: TimeFormatter.searchDateFormatter(date: startDate),
-                                      to: TimeFormatter.searchDateFormatter(date: endDate), 
-                                      page: String(currentPage),
-                                      pageSize: pageSize)
+        NewsService.findNewsPublisher(with: prepareSearchModel())
         .receive(on: DispatchQueue.global(qos: .background))
         .sink { [weak self] result in
             guard let self else { return }
@@ -103,5 +98,17 @@ final class NewsViewModel: ObservableObject {
                 self.alertMessage = "Something went wrong"
             }
         }
+    }
+    
+    private func prepareSearchModel() -> SearchModel {
+        let searchModelItem = SearchModel(searchText: searchText,
+                                          language: language,
+                                          searchIn: searchIn,
+                                          sortParam: sortingParameter,
+                                          from: TimeFormatter.searchDateFormatter(date: startDate),
+                                          to: TimeFormatter.searchDateFormatter(date: endDate),
+                                          page: String(currentPage),
+                                          pageSize: pageSize)
+        return searchModelItem
     }
 }

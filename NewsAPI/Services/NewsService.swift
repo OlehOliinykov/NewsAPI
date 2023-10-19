@@ -15,13 +15,14 @@ final class NewsService {
             static let createURLError: String = "Fail when try create URL"
         }
     }
+    //TODO: - move to separeted class
     static private let keychain = KeychainSwift()
     
-    static func findNewsPublisher(_ q: String, languages: Languages, searchIn: SearchWordIn, sortParam: SortingParameters, from: String, to: String, page: String, pageSize: PageSize) -> AnyPublisher<NewsModel, Error> {
+    static func findNewsPublisher(with searchModel: SearchModel) -> AnyPublisher<NewsModel, Error> {
         let session = URLSession.shared
         let decoder = JSONDecoder()
 
-        let url = createURL(q: q, language: languages, searchIn: searchIn, sortParam: sortParam, pageSize: pageSize, from: from, to: to, page: page, key: keychain.get("APIKey"))
+        let url = createURL(with: searchModel, key: keychain.get("APIKey"))
 
         return session.dataTaskPublisher(for: url)
             .map(\.data)
@@ -29,29 +30,21 @@ final class NewsService {
             .eraseToAnyPublisher()
     }
         
-    private static func createURL(q: String,
-                                  language: Languages,
-                                  searchIn: SearchWordIn,
-                                  sortParam: SortingParameters,
-                                  pageSize: PageSize,
-                                  from: String,
-                                  to: String,
-                                  page: String,
-                                  key: String?) -> URL {
+    private static func createURL(with searchModel: SearchModel, key: String?) -> URL {
         guard let key = key else { return URL(string: Constants.WeatherServiceErrors.createURLError.description)! }
         var component = URLComponents()
         component.scheme = "https"
         component.host = "newsapi.org"
         component.path = "/v2/everything"
         component.queryItems = [
-            URLQueryItem(name: "q", value: q),
-            URLQueryItem(name: "pageSize", value: "\(pageSize.rawValue)"),
-            URLQueryItem(name: "language", value: language.rawValue),
-            URLQueryItem(name: "searchIn", value: searchIn.getParameter()),
-            URLQueryItem(name: "sortBy", value: sortParam.getParameter()),
-            URLQueryItem(name: "from", value: from),
-            URLQueryItem(name: "to", value: to),
-            URLQueryItem(name: "page", value: page),
+            URLQueryItem(name: "q", value: searchModel.searchText),
+            URLQueryItem(name: "pageSize", value: "\(searchModel.pageSize.rawValue)"),
+            URLQueryItem(name: "language", value: searchModel.language.rawValue),
+            URLQueryItem(name: "searchIn", value: searchModel.searchIn.getParameter()),
+            URLQueryItem(name: "sortBy", value: searchModel.sortParam.getParameter()),
+            URLQueryItem(name: "from", value: searchModel.from),
+            URLQueryItem(name: "to", value: searchModel.to),
+            URLQueryItem(name: "page", value: searchModel.page),
             URLQueryItem(name: "apiKey", value: key)
         ]
         

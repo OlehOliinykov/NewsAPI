@@ -51,34 +51,35 @@ enum SearchWordIn: String, CaseIterable {
     }
 }
 
-struct FiltersSheetView: View {
-    private enum Constants {
-        enum NavigationTitle {
-            static let navigationFiltersTitle = "Filters"
-        }
-        
-        enum CornerRadius {
-            static let defaultCornerRadius: CGFloat = 8
-        }
-        
-        enum Opacities {
-            static let defaultButtonOpacity: Double = 0.25
-        }
-        
-        enum Paddings {
-            static let defaultButtonPadding: Double = 7
-            static let datePickerPadding: Double = 16
-        }
-        
-        enum SectionTitles {
-            static let sortingBySection: String = "Sort news by: "
-            static let languageSection: String = "Language: "
-            static let searchInSection: String = "Search word in: "
-            static let newsInPageSection: String = "News in one page: "
-            static let fromSection: String = "Search news from: "
-            static let toSection: String = "To: "
-        }
+enum Constants {
+    enum NavigationTitle {
+        static let navigationFiltersTitle = "Filters"
     }
+    
+    enum CornerRadius {
+        static let defaultCornerRadius: CGFloat = 8
+    }
+    
+    enum Opacities {
+        static let defaultButtonOpacity: Double = 0.25
+    }
+    
+    enum Paddings {
+        static let defaultButtonPadding: Double = 7
+        static let datePickerPadding: Double = 16
+    }
+    
+    enum SectionTitles {
+        static let sortingBySection: String = "Sort news by: "
+        static let languageSection: String = "Language: "
+        static let searchInSection: String = "Search word in: "
+        static let newsInPageSection: String = "News in one page: "
+        static let fromSection: String = "Search news from: "
+        static let toSection: String = "To: "
+    }
+}
+
+struct FiltersSheetView: View {
     @Binding var startDate: Date
     @Binding var endDate: Date
     

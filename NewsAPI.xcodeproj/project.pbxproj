@@ -50,6 +50,7 @@
 		CCCD92CC2ACCB0E000E5D042 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD92CB2ACCB0E000E5D042 /* NewsDetailView.swift */; };
 		CCCD92CF2ACCB16900E5D042 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD92CE2ACCB16900E5D042 /* DateFormatter.swift */; };
 		CCCD92D22ACCBD9C00E5D042 /* FiltersSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD92D12ACCBD9C00E5D042 /* FiltersSheetView.swift */; };
+		CCD1BB6F2AE15F0900BF0B79 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1BB6E2AE15F0900BF0B79 /* SearchModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CCCD92CB2ACCB0E000E5D042 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		CCCD92CE2ACCB16900E5D042 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		CCCD92D12ACCBD9C00E5D042 /* FiltersSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSheetView.swift; sourceTree = "<group>"; };
+		CCD1BB6E2AE15F0900BF0B79 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CCCD92C52ACC7EC000E5D042 /* NewsModel.swift */,
+				CCD1BB6E2AE15F0900BF0B79 /* SearchModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD1BB6F2AE15F0900BF0B79 /* SearchModel.swift in Sources */,
 				CCCD92C62ACC7EC000E5D042 /* NewsModel.swift in Sources */,
 				CCCD92CC2ACCB0E000E5D042 /* NewsDetailView.swift in Sources */,
 				CCB198002ACEE3EE00714C4B /* LoadMoreDataIfNeeded.swift in Sources */,
