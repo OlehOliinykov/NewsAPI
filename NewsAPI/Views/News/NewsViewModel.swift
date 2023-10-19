@@ -29,7 +29,7 @@ final class NewsViewModel: ObservableObject {
     @Published var sortingParameter: SortingParameters = .publishedAt
     
     //TODO: move to private method
-    @Published var startDate: Date = (Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date())
+    @Published var startDate: Date = .now
     @Published var endDate: Date = .now
     
     @Published var showFiltersSheet: Bool = false
@@ -43,6 +43,10 @@ final class NewsViewModel: ObservableObject {
     private var totalResults: Int = 0
     
     private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        startDate = yesterdayDate()
+    }
     
     func loadMoreNews() {
         if !isLoadedAll {
@@ -110,5 +114,11 @@ final class NewsViewModel: ObservableObject {
                                           page: String(currentPage),
                                           pageSize: pageSize)
         return searchModelItem
+    }
+    
+    private func yesterdayDate() -> Date {
+        let date = (Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date())
+        
+        return date
     }
 }

@@ -1,4 +1,0 @@
-module GoogleAppMeasurementOnDeviceConversionTarget {
-umbrella "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/GoogleAppMeasurement/GoogleAppMeasurementOnDeviceConversionWrapper/include"
-export *
-}

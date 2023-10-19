@@ -1,4 +1,0 @@
-module FirebaseDynamicLinks {
-umbrella header "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDynamicLinks/Sources/Public/FirebaseDynamicLinks/FirebaseDynamicLinks.h"
-export *
-}

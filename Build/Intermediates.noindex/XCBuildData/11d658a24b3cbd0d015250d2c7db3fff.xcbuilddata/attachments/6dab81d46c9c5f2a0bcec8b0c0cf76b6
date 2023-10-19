@@ -1,4 +1,0 @@
-module GoogleUtilities_Reachability {
-umbrella "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Reachability/Public"
-export *
-}

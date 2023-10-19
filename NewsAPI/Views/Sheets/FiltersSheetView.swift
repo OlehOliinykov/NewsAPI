@@ -221,7 +221,7 @@ struct FiltersSheetView: View {
     }
     
     private var fromDatePicker: some View {
-        DatePicker(Constants.SectionTitles.fromSection, selection: $startDate, in: ...endDate, displayedComponents: .date)
+        DatePicker(Constants.SectionTitles.fromSection, selection: $startDate, in: ...endDateMinusOne(), displayedComponents: .date)
             .datePickerStyle(.compact)
             .padding(.horizontal, Constants.Paddings.datePickerPadding)
     }
@@ -233,5 +233,15 @@ struct FiltersSheetView: View {
                 .padding(.horizontal, Constants.Paddings.datePickerPadding)
             Divider()
         }
+    }
+}
+
+extension FiltersSheetView {
+    private func endDateMinusOne() -> Date {
+        let daysForSubstract: Int = -1
+        guard let minusOneDay = Calendar.current.date(byAdding: .day, value: daysForSubstract, to: endDate) else { return endDate }
+        
+        
+        return minusOneDay
     }
 }
