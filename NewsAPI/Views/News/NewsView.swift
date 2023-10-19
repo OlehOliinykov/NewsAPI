@@ -50,7 +50,8 @@ struct NewsView: View {
             }
             .sheet(isPresented: $viewModel.showFiltersSheet, content: {
                 FiltersSheetView(startDate: $viewModel.startDate,
-                                 endDate: $viewModel.endDate, languages: $viewModel.language,
+                                 endDate: $viewModel.endDate, 
+                                 language: $viewModel.language,
                                  sortingParameter: $viewModel.sortingParameter,
                                  pageSize: $viewModel.pageSize,
                                  searchWordIn: $viewModel.searchIn)

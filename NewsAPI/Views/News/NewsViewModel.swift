@@ -28,7 +28,6 @@ final class NewsViewModel: ObservableObject {
     @Published var searchIn: SearchWordIn = .title
     @Published var sortingParameter: SortingParameters = .publishedAt
     
-    //TODO: move to private method
     @Published var startDate: Date = .now
     @Published var endDate: Date = .now
     

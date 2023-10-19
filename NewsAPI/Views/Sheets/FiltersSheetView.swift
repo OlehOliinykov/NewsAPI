@@ -7,50 +7,6 @@
 
 import SwiftUI
 
-enum Languages: String, CaseIterable {
-    case ar, de, en, es, fr, he, it, nl, no, pt, sv, zh
-}
-
-enum SortingParameters: String, CaseIterable {
-    case relevancy = "Relevancy"
-    case popularity = "Popularity"
-    case publishedAt = "Published date"
-    
-    func getParameter() -> String {
-        switch self {
-        case .relevancy:
-            return "relevancy"
-        case .popularity:
-            return "popularity"
-        case .publishedAt:
-            return "publishedAt"
-        }
-    }
-}
-
-enum PageSize: Int, CaseIterable {
-    case small = 25
-    case medium = 50
-    case large = 100
-}
-
-enum SearchWordIn: String, CaseIterable {
-    case title = "Title"
-    case description = "Description"
-    case content = "Content"
-    
-    func getParameter() -> String {
-        switch self {
-        case .title:
-            return "title"
-        case .description:
-            return "description"
-        case .content:
-            return "content"
-        }
-    }
-}
-
 enum Constants {
     enum NavigationTitle {
         static let navigationFiltersTitle = "Filters"
@@ -83,7 +39,7 @@ struct FiltersSheetView: View {
     @Binding var startDate: Date
     @Binding var endDate: Date
     
-    @Binding var languages: Languages
+    @Binding var language: Languages
     @Binding var sortingParameter: SortingParameters
     @Binding var pageSize: PageSize
     @Binding var searchWordIn: SearchWordIn
@@ -112,22 +68,8 @@ struct FiltersSheetView: View {
                 Spacer()
             }
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(SortingParameters.allCases, id: \.self) { parameter in
-                        Text(parameter.rawValue)
-                            .foregroundColor(.black)
-                            .padding(Constants.Paddings.defaultButtonPadding)
-                            .background(sortingParameter == parameter ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
-                            .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
-                            .onTapGesture {
-                                withAnimation {
-                                    sortingParameter = parameter
-                                }
-                            }
-                    }
-                }
-            }
+            FilterView(selectedFilter: $sortingParameter)
+            
             Divider()
         }
         .padding(.horizontal)
@@ -141,24 +83,8 @@ struct FiltersSheetView: View {
                 Spacer()
             }
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(Languages.allCases, id: \.self) { countryCode in
-                        if let formattedLanguage = CountryFormatter.getCountryName(for: countryCode.rawValue) {
-                            Text(formattedLanguage)
-                                .foregroundColor(.black)
-                                .padding(Constants.Paddings.defaultButtonPadding)
-                                .background(languages == countryCode ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
-                                .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
-                                .onTapGesture {
-                                    withAnimation {
-                                        languages = countryCode
-                                    }
-                                }
-                        }
-                    }
-                }
-            }
+            FilterView(selectedFilter: $language)
+            
             Divider()
         }
         .padding(.horizontal)
@@ -172,21 +98,8 @@ struct FiltersSheetView: View {
                 Spacer()
             }
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(SearchWordIn.allCases, id: \.self) { parameter in
-                        Text(parameter.rawValue)
-                            .padding(Constants.Paddings.defaultButtonPadding)
-                            .background(searchWordIn == parameter ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
-                            .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
-                            .onTapGesture {
-                                withAnimation {
-                                    searchWordIn = parameter
-                                }
-                            }
-                    }
-                }
-            }
+            FilterView(selectedFilter: $searchWordIn)
+
             Divider()
         }
         .padding(.horizontal)
@@ -199,22 +112,8 @@ struct FiltersSheetView: View {
                     .bold()
                 Spacer()
             }
-                        
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(PageSize.allCases, id: \.self) { size in
-                        Text("\(size.rawValue)")
-                            .padding(Constants.Paddings.defaultButtonPadding)
-                            .background(pageSize == size ? .gray.opacity(Constants.Opacities.defaultButtonOpacity) : .clear)
-                            .cornerRadius(Constants.CornerRadius.defaultCornerRadius)
-                            .onTapGesture {
-                                withAnimation {
-                                    pageSize = size
-                                }
-                            }
-                    }
-                }
-            }
+            FilterView(selectedFilter: $pageSize)
+            
             Divider()
         }
         .padding(.horizontal)
