@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import KeychainSwift
 import FirebaseDatabase
 import FirebaseDatabaseSwift
 
@@ -18,20 +17,11 @@ final class APIKeyFetchService {
     }
     
     static private let ref = Database.database().reference()
-    static private let keychain = KeychainSwift()
     
     static func getAPIKeyFromBackend() {
         ref.child("APIKey").getData { error, snapshot in
             guard let key = snapshot?.value as? String else { return }
-            setKeyToKeychain(key)
-        }
-    }
-    
-    static private func setKeyToKeychain(_ key: String) {
-        if let storedKey = keychain.get("APIKey"), key == storedKey {
-            print("Key is already saved")
-        } else {
-            keychain.set(key, forKey: "APIKey")
+            KeyChainService.setKeyToKeychain(key)
         }
     }
 }

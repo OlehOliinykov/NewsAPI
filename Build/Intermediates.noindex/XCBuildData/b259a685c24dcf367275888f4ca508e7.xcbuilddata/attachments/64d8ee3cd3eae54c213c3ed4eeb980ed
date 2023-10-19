@@ -1,4 +1,0 @@
-module GoogleUtilities_AppDelegateSwizzler {
-umbrella "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public"
-export *
-}

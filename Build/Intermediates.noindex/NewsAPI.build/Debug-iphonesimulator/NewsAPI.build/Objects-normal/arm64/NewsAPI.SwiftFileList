@@ -7,6 +7,7 @@
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/News/NewsView.swift
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Services/APIKeyFetchService.swift
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Formatters/DateFormatter.swift
+/Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Services/KeyChainService.swift
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/News/NewsViewModel.swift
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/Sheets/FiltersSheetView.swift
 /Users/olehcartelll/Documents/petProjects/NewsAPI/NewsAPI/Views/Cells/NewsCell.swift

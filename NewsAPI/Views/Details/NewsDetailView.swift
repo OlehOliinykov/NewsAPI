@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct NewsDetailView: View {
     private enum Constants {
         enum NavigationTitle {

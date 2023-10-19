@@ -51,6 +51,7 @@
 		CCCD92CF2ACCB16900E5D042 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD92CE2ACCB16900E5D042 /* DateFormatter.swift */; };
 		CCCD92D22ACCBD9C00E5D042 /* FiltersSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD92D12ACCBD9C00E5D042 /* FiltersSheetView.swift */; };
 		CCD1BB6F2AE15F0900BF0B79 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1BB6E2AE15F0900BF0B79 /* SearchModel.swift */; };
+		CCD1BB712AE1635A00BF0B79 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1BB702AE1635A00BF0B79 /* KeyChainService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		CCCD92CE2ACCB16900E5D042 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		CCCD92D12ACCBD9C00E5D042 /* FiltersSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersSheetView.swift; sourceTree = "<group>"; };
 		CCD1BB6E2AE15F0900BF0B79 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		CCD1BB702AE1635A00BF0B79 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				CCCD92872ACC792D00E5D042 /* APIKeyFetchService.swift */,
 				CCCD92C22ACC7CB400E5D042 /* NewsService.swift */,
+				CCD1BB702AE1635A00BF0B79 /* KeyChainService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				CC8078892ACC6FD9007A3199 /* NewsView.swift in Sources */,
 				CCCD92882ACC792D00E5D042 /* APIKeyFetchService.swift in Sources */,
 				CCCD92CF2ACCB16900E5D042 /* DateFormatter.swift in Sources */,
+				CCD1BB712AE1635A00BF0B79 /* KeyChainService.swift in Sources */,
 				CCCD926E2ACC72F300E5D042 /* NewsViewModel.swift in Sources */,
 				CCCD92D22ACCBD9C00E5D042 /* FiltersSheetView.swift in Sources */,
 				CCCD92C92ACC97E000E5D042 /* NewsCell.swift in Sources */,

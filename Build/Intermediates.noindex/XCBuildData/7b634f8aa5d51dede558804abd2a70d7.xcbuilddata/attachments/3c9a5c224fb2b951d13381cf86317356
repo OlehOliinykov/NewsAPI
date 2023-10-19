@@ -1,4 +1,0 @@
-module FirebaseDatabase {
-umbrella header "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabase/Sources/Public/FirebaseDatabase/FirebaseDatabase.h"
-export *
-}

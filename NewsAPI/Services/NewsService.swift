@@ -7,7 +7,6 @@
 
 import Combine
 import Foundation
-import KeychainSwift
 
 final class NewsService {
     private enum Constants {
@@ -15,14 +14,12 @@ final class NewsService {
             static let createURLError: String = "Fail when try create URL"
         }
     }
-    //TODO: - move to separeted class
-    static private let keychain = KeychainSwift()
     
     static func findNewsPublisher(with searchModel: SearchModel) -> AnyPublisher<NewsModel, Error> {
         let session = URLSession.shared
         let decoder = JSONDecoder()
 
-        let url = createURL(with: searchModel, key: keychain.get("APIKey"))
+        let url = createURL(with: searchModel, key: KeyChainService.getAPIKey())
 
         return session.dataTaskPublisher(for: url)
             .map(\.data)

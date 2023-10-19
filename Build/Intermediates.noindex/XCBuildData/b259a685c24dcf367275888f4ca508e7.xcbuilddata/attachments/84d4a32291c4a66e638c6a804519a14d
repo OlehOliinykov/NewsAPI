@@ -1,4 +1,0 @@
-module leveldb {
-umbrella "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/leveldb/include"
-export *
-}

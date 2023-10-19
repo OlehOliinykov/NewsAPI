@@ -1,0 +1,4 @@
+module GoogleUtilities_Environment {
+umbrella "/Users/olehcartelll/Library/Developer/Xcode/DerivedData/NewsAPI-ftqojxgklggirwgceoxcnzvqlrcb/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/Environment/Public"
+export *
+}
